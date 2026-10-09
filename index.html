@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineCanvas Review Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Premium Star Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>🎬 CineCanvas Review Hub</h1>
+        <p>Explore your favorite movies and share your thoughts in real-time!</p>
+    </header>
+
+    <!-- Hero Carousel Section (4 Interchanging Images) -->
+    <section class="hero-carousel">
+        <div class="carousel-container">
+            <div class="slide active"><img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=80" alt="Movie 1"></div>
+            <div class="slide"><img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80" alt="Movie 2"></div>
+            <div class="slide"><img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=1200&q=80" alt="Movie 3"></div>
+            <div class="slide"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80" alt="Movie 4"></div>
+        </div>
+    </section>
+
+    <!-- Movies Grid Section (20+ Movies List) -->
+    <main class="container">
+        <h2>Featured Masterpieces</h2>
+        <div class="movie-grid" id="movieGrid">
+            <!-- Dynamically populated or static cards for 20 movies -->
+        </div>
+    </main>
+
+    <!-- Premium Review Modal / Dialog Box -->
+    <div class="modal-overlay" id="reviewModal">
+        <div class="modal-card">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <h2 id="modalTitle">Review: Avatar</h2>
+            
+            <!-- Interactive Touch Star Rating -->
+            <div class="rating-group">
+                <label>Rate this movie:</label>
+                <div class="star-rating">
+                    <i class="fa-solid fa-star" data-rating="1"></i>
+                    <i class="fa-solid fa-star" data-rating="2"></i>
+                    <i class="fa-solid fa-star" data-rating="3"></i>
+                    <i class="fa-solid fa-star" data-rating="4"></i>
+                    <i class="fa-solid fa-star" data-rating="5"></i>
+                </div>
+            </div>
+
+            <!-- Premium Text Area with Counter -->
+            <div class="textarea-wrapper">
+                <textarea id="reviewText" placeholder="Write your review here..." maxlength="200"></textarea>
+                <span id="charCount">0/200 characters</span>
+            </div>
+
+            <button class="post-btn">Post Review</button>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2026 CineCanvas Review Hub. Crafted with ❤️.</p>
+        <p class="footer-sub">Explore, Review, and Experience Cinema Like Never Before.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
